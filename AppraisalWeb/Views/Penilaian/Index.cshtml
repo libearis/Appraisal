@@ -1,0 +1,75 @@
+﻿@model PenilaianVM
+@{
+    Layout = "_Layout";
+}
+
+@* <form asp-action="Index" method="get">
+    <input type="text" placeholder="Number" asp-for="RoomNumber">
+    <select asp-for="RoomType">
+        <option value="">All Type</option>
+        <option value="RS">Regular Single Bed</option>
+        <option value="RD">Regular Double Bed</option>
+        <option value="RT">Regular Twin Bed</option>
+        <option value="VS">VIP Single Bed</option>
+        <option value="VD">VIP Double Bed</option>
+        <option value="VT">VIP Twin Bed</option>
+    </select>
+    <select asp-for="RoomStatus">
+        <option value="">All Status</option>
+        <option value="Vacant">Vacant</option>
+        <option value="Booked">Booked</option>
+    </select>
+    <button id="search-button" class="button-25" type="submit">Search</button>
+</form> *@
+<table>
+    <thead>
+        <tr>
+            <th>Action</th>
+            <th>Nama</th>
+            <th>Divisi/Departemen</th>
+        </tr>
+    </thead>
+    <tbody class="main-tbody">
+        @if (Model.Employees.Count == 0)
+        {
+            <tr>
+                <td colspan="7">Tidak ada karyawan untuk dinilai</td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var employee in Model.Employees)
+            {
+                <tr>
+                    <td>
+                        <a asp-action="FormPenilaian"><button class="button-25">Nilai</button></a>
+                    </td>
+                    <td>@employee.Nama</td>
+                    <td>@employee.DivisiOrDepartemen</td>
+                </tr>
+            }
+        }
+    </tbody>
+    @if (Model.Employees.Count != 0)
+    {
+        <tfoot>
+            <tr>
+                <td colspan="7">
+                    <div class="tfoot-flex">
+                        <div>
+                            Page @Model.Pagination.PageNumber of @Model.Pagination.TotalPages
+                        </div>
+                        <div>
+                            @for (int pageNumber = 1; pageNumber <= Model.Pagination.TotalPages; pageNumber++)
+                            {
+                                <a asp-action="Index" asp-route-pageNumber="@pageNumber">
+                                    <button class="button-25 pagenumber">@pageNumber</button>
+                                </a>
+                            }
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+    }
+</table>

@@ -1,0 +1,55 @@
+@using System.Security.Claims
+
+<div class="header-flex">
+    <h2>@ViewBag.PageTitle</h2>
+    <div>
+        <div>Hello</div>
+        <span>@User.FindFirstValue(ClaimTypes.Name)</span>
+        
+        <button class="button-25" id="change"><a>Change Password</a></button>
+        <button class="button-25" id="logout"><a asp-controller="Authorization" asp-action="Logout">LogOut</a></button>
+    </div>
+</div>
+<div class="change-password">
+    <div class="popup">
+        <div class="header-flex">
+            <h2>Change Password</h2>
+        </div>
+        <div id="detail-bio">
+            <form method="post">
+                <table>
+                    <tr>
+                        <td>Old Password</td>
+                        <td>
+                            <input type="password" id="old-password">
+                            <div class="popup-validation-error" id="eror-1"></div>
+                        </td>
+                    </tr>
+                    <tr id="tr1">
+                        <td>New Password</td>
+                        <td>
+                            <input type="password" id="new-password">
+                            <div class="popup-validation-error" id="eror-2"></div>
+                        </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td>Confirm Password</td>
+                        <td>
+                            <input type="password" id="confirm-password">
+                            <div class="popup-validation-error" id="eror-3"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button class="button-25" id="submit-change">Save</button>
+                            <button class="button-25" id="close-change">Close</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="~/JS/UserInfo.js"></script>

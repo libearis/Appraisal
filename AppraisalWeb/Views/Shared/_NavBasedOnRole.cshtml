@@ -1,0 +1,23 @@
+@using System.Security.Claims
+@if(User.FindFirstValue(ClaimTypes.Role) == "Karyawan")
+{
+    <a asp-controller="Profile" asp-action="Index">
+        <div>
+            <span>Profile</span>
+        </div>
+    </a>
+}
+
+else
+{
+    <a asp-controller="Profile" asp-action="Index">
+        <div>
+            <span>Proifle</span>
+        </div>
+    </a>
+    <a asp-controller="Penilaian" asp-action="Index">
+        <div>
+            <span>Penilaian</span>
+        </div>
+    </a>
+}

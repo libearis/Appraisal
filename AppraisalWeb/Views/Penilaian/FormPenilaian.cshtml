@@ -1,0 +1,834 @@
+﻿@{
+    Layout = "_Layout";
+}
+<div class="space-y-12 mx-16">
+    <div class="lg:flex lg:items-center lg:justify-between">
+        <div class="min-w-0 flex-1 text-center">
+            <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">PT.Bukit Indah Jaya</h2>
+            <h3 class="text-xl leading-7 text-gray-700 sm:truncate sm:text-lg sm:tracking-tight">INDIVIDUAL PERFORMANCE SYSTEM</h3>
+            <h3 class="text-xl leading-7 text-gray-700 sm:truncate sm:text-lg sm:tracking-tight">PERIODE: JANUARY-DECEMBER 2024</h3>
+        </div>
+        <div class="mt-5 flex lg:ml-4 lg:mt-0">
+            <span class="hidden sm:block">
+                <button type="button" class="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                    <svg class="-ml-0.5 mr-1.5 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path d="M2.695 14.763l-1.262 3.154a.5.5 0 00.65.65l3.155-1.262a4 4 0 001.343-.885L17.5 5.5a2.121 2.121 0 00-3-3L3.58 13.42a4 4 0 00-.885 1.343z" />
+                    </svg>
+                    Edit
+                </button>
+            </span>
+
+            <span class="ml-3 hidden sm:block">
+                <button type="button" class="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                    <svg class="-ml-0.5 mr-1.5 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z" />
+                        <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z" />
+                    </svg>
+                    View
+                </button>
+            </span>
+
+            <span class="sm:ml-3">
+                <button type="button" class="inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    <svg class="-ml-0.5 mr-1.5 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                    </svg>
+                    Publish
+                </button>
+            </span>
+
+            <!-- Dropdown -->
+            <div class="relative ml-3 sm:hidden">
+                <button type="button" class="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:ring-gray-400" id="mobile-menu-button" aria-expanded="false" aria-haspopup="true">
+                    More
+                    <svg class="-mr-1 ml-1.5 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+
+                <!--
+                    Dropdown menu, show/hide based on menu state.
+
+                    Entering: "transition ease-out duration-200"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                    Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                -->
+                <div class="absolute right-0 z-10 -mr-1 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="mobile-menu-button" tabindex="-1">
+                    <!-- Active: "bg-gray-100", Not Active: "" -->
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="mobile-menu-item-0">Edit</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="mobile-menu-item-1">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lg:flex lg:items-center lg:justify-between">
+        <div class="flex-1 flex-col">
+            <div class="mt-5 grid grid-cols-5 grid-flow-row-dense">
+                <label for="Name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
+                <div class="flex col-span-4 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                    <input type="text" name="Name" id="Name" autocomplete="Name" class="block flex-1 border-0 bg-transparent py-1.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+            <div class="mt-5 grid grid-cols-5 grid-flow-row-dense">
+                <label for="nik" class="block text-sm font-medium leading-6 text-gray-900">NIK</label>
+                <div class="flex col-span-4 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                    <input type="text" name="NIK" id="NIK" autocomplete="NIK" class="block flex-1 border-0 bg-transparent py-1.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 flex-col">
+            <div class="mt-5 grid grid-cols-5 grid-flow-row-dense">
+                <label for="Name" class="block text-sm font-medium leading-6 text-gray-900">Division / Department</label>
+                <div class="flex col-span-4 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                    <input type="text" name="Name" id="Name" autocomplete="Name" class="block flex-1 border-0 bg-transparent py-1.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+            <div class="mt-5 grid grid-cols-5 grid-flow-row-dense">
+                <label for="nik" class="block text-sm font-medium leading-6 text-gray-900">Jabatan</label>
+                <div class="flex col-span-4 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                    <input type="text" name="NIK" id="NIK" autocomplete="NIK" class="block flex-1 border-0 bg-transparent py-1.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="my-4">
+            <h2 class="text-xl font-semibold">A. Indikator Utama Kinerja</h2>
+            <button class="button-25">Add Record</button>
+        </div>
+        <div>
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-100">
+                        <tr>
+                            <th scope="col" colspan="4" class="px-6 py-3 text-center">
+                                INDIKATOR UTAMA KINERJA
+                            </th>
+                            <th rowspan="2" scope="col" class="px-6 py-3">
+                                Bobot(a)%
+                            </th>
+                            <th rowspan="2" scope="col" class="px-6 py-3">
+                                Polarisasi
+                            </th>
+                            <th rowspan="2" scope="col" class="px-6 py-3">
+                                Target
+                            </th>
+                            <th rowspan="2" scope="col" class="px-6 py-3">
+                                Aktual
+                            </th>
+                            <th rowspan="2" scope="col" class="px-6 py-3">
+                                Tingkat Unjuk Kerja
+                            </th>
+                            <th rowspan="2" scope="col" class="px-6 py-3">
+                                Nilai Unjuk Kerja
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                No.
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                STRATEGIC OBJECTIVE
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                KPI
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                UNIT OF MEASUREMENT
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                1
+                            </th>
+                            <td class="px-6 py-4">
+                            <input class="w-20 bg-white px-2" name="x" type="text">
+                            </td>
+                            <td class="px-6 py-4">
+                                <select class="w-20">
+                                <option>B-LESS DJARUM PHASE 3</option>
+                                <option>B-LESS DJARUM PHASE 3B</option>
+                                <option>FAKTUR PAJAK KELUARAN</option>
+                                <option>MIGRASI SERVER B-LESS</option>
+                                <option>ITSM</option>
+                                </select>
+                            </td>
+                            <td class="px-6 py-4">
+                                <select class="w-20">
+                                <option>PROJEK</option>
+                                <option>REPORT</option>
+                                <option>UNIT</option>
+                                <option>REQUEST</option>
+                            </select>
+                            </td>
+                            <td class="px-6 py-4">
+                                <input class="w-20 bg-white px-2" name="x" type="text">
+                            </td>
+                            <td class="px-6 py-4">
+                                <select class="w-20">
+                                <option>Maximum</option>
+                                <option>Minimum</option>
+                                <option>Stabilize</option>
+                            </select>
+                            </td>
+                            <td class="px-6 py-4">
+                                100
+                            </td>
+                            <td class="px-6 py-4">
+                                <input class="w-20 bg-white px-2" name="x" type="text">
+                            </td>
+                            <td class="px-6 py-4">
+                                99
+                            </td>
+                            <td class="px-6 py-4">
+                                99
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <td colspan="9" class="px-6 py-4 text-center">
+                                NILAI 100
+                            </td>
+                            <td class="px-6 py-4 dark:text-blue-900">
+                                $2999
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="my-4">
+            <h2 class="text-xl font-semibold">B. Kompetensi Dasar</h2>
+        </div>
+        <div>
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-100">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-center">
+                                No.
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Kompetensi
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Perilaku
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Red Flags
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Yellow Flags
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Green Flags
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Keterangan
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                1
+                            </th>
+                            <td class="px-6 py-4">
+                                <h3 class="text-lg font-semibold">CUSTOMER FOCUS</h3>
+                                <p>
+                                    Memberikan pelayanan melebihi harapan dari pelanggan, baik eksternal maupun internal dan memastikan kepuasan pelanggan tercapai. Termasuk didalamnya melakukan perbaikan terus menerus terhadap kualitas pelayanan dan mengembangkan konsep pelayanan konsumen di masa akan datang
+                                </p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <h5 class="text-lg font-semibold">
+                                    Menjaga Kejelasan Komunikasi dengan Konsumen
+                                </h5>
+                                <p>
+                                    Menjalin komunikasi dua arah dengan konsumen mengenai harapan dan kepentingan bersama, memonitor tingkat kepuasan konsumen dan memberikan informasi-informasi yang berguna bagi konsumen.
+                                </p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <input type="radio" name="customerfocus"></input>
+                            </td>
+                            <td class="px-6 py-4">
+                                <input type="radio" name="customerfocus"></input>
+                            </td>
+                            <td class="px-6 py-4">
+                                <input type="radio" name="customerfocus"></input>
+                            </td>
+                            <td class="px-6 py-4">
+                                keterangan
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                1
+                            </th>
+                            <td class="px-6 py-4">
+                                <h3 class="text-lg font-semibold">Lorem</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum dolorum perferendis eius vero aliquid! Aliquid, dolor. Odit, labore sint numquam expedita quos quia quasi ullam voluptates sunt totam quae.</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <h3 class="text-lg font-semibold">Lorem</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum dolorum perferendis eius vero aliquid! Aliquid, dolor. Odit, labore sint numquam expedita quos quia quasi ullam voluptates sunt totam quae.</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                            </td>
+                            <td class="px-6 py-4">
+                                <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                            </td>
+                            <td class="px-6 py-4">
+                                <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                            </td>
+                            <td class="px-6 py-4"></td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                1
+                            </th>
+                            <td class="px-6 py-4">
+                                <h3 class="text-lg font-semibold">Lorem</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum dolorum perferendis eius vero aliquid! Aliquid, dolor. Odit, labore sint numquam expedita quos quia quasi ullam voluptates sunt totam quae.</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <h3 class="text-lg font-semibold">Lorem</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum dolorum perferendis eius vero aliquid! Aliquid, dolor. Odit, labore sint numquam expedita quos quia quasi ullam voluptates sunt totam quae.</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                            </td>
+                            <td class="px-6 py-4">
+                                <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                            </td>
+                            <td class="px-6 py-4">
+                                <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                            </td>
+                            <td class="px-6 py-4"></td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                1
+                            </th>
+                            <td class="px-6 py-4">
+                                <h3 class="text-lg font-semibold">Lorem</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum dolorum perferendis eius vero aliquid! Aliquid, dolor. Odit, labore sint numquam expedita quos quia quasi ullam voluptates sunt totam quae.</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <h3 class="text-lg font-semibold">Lorem</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum dolorum perferendis eius vero aliquid! Aliquid, dolor. Odit, labore sint numquam expedita quos quia quasi ullam voluptates sunt totam quae.</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                            </td>
+                            <td class="px-6 py-4">
+                                <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                            </td>
+                            <td class="px-6 py-4">
+                                <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                            </td>
+                            <td class="px-6 py-4"></td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                1
+                            </th>
+                            <td class="px-6 py-4">
+                                <h3 class="text-lg font-semibold">Lorem</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum dolorum perferendis eius vero aliquid! Aliquid, dolor. Odit, labore sint numquam expedita quos quia quasi ullam voluptates sunt totam quae.</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <h3 class="text-lg font-semibold">Lorem</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum dolorum perferendis eius vero aliquid! Aliquid, dolor. Odit, labore sint numquam expedita quos quia quasi ullam voluptates sunt totam quae.</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                            </td>
+                            <td class="px-6 py-4">
+                                <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                            </td>
+                            <td class="px-6 py-4">
+                                <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                            </td>
+                            <td class="px-6 py-4"></td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <td colspan="6" class="px-6 py-4 text-center">
+                                NILAI 100
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="my-4">
+            <h2 class="text-xl font-semibold">C. Indikator Tanggung Jawab Area</h2>
+        </div>
+        <div>
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-100">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-center">
+                                No.
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Aspek
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Keterangan
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                x
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Bobot%
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Target
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Aktual
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Tingkat Unjuk Kerja
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Nilai Unjuk Kerja
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                1
+                            </th>
+                            <td class="px-6 py-4">
+                                5R
+                            </td>
+                            <td colspan="2" class="px-6 py-4">
+                                Autdit Score
+                            </td>
+                            <td class="px-6 py-4">
+                                30
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                <input class="w-20 bg-gray-700 px-2" name="x" type="text">
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <th rowspan="3" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                2
+                            </th>
+                            <td rowspan="3" class="px-6 py-4">
+                                Compliance
+                            </td>
+                            <td colspan="2" class="px-6 py-4">
+                                Autdit Score
+                            </td>
+                            <td class="px-6 py-4">
+                                30
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                <input class="w-20 bg-gray-700 px-2" name="x" type="text">
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <td colspan="2" class="px-6 py-4">
+                                Autdit Score
+                            </td>
+                            <td class="px-6 py-4">
+                                30
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                <input class="w-20 bg-gray-700 px-2" name="x" type="text">
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <td colspan="2" class="px-6 py-4">
+                                Autdit Score
+                            </td>
+                            <td class="px-6 py-4">
+                                30
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                <input class="w-20 bg-gray-700 px-2" name="x" type="text">
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <th rowspan="7" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                3
+                            </th>
+                            <td rowspan="7" class="px-6 py-4">
+                                Kehadiran
+                            </td>
+                            <td rowspan="7" class="px-6 py-4">
+                                Kehadiran tepat waktu dan tingkat kehadiran dalam bekerja
+                            </td>
+                            <td class="px-6 py-4">
+                                Mangkir
+                            </td>
+                            <td class="px-6 py-4">
+                                30
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                <input class="w-20 bg-gray-700 px-2" name="x" type="text">
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <td class="px-6 py-4">
+                                Mangkir
+                            </td>
+                            <td class="px-6 py-4">
+                                30
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                <input class="w-20 bg-gray-700 px-2" name="x" type="text">
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <td class="px-6 py-4">
+                                Mangkir
+                            </td>
+                            <td class="px-6 py-4">
+                                30
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                <input class="w-20 bg-gray-700 px-2" name="x" type="text">
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <td class="px-6 py-4">
+                                Mangkir
+                            </td>
+                            <td class="px-6 py-4">
+                                30
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                <input class="w-20 bg-gray-700 px-2" name="x" type="text">
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <td class="px-6 py-4">
+                                Mangkir
+                            </td>
+                            <td class="px-6 py-4">
+                                30
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                <input class="w-20 bg-gray-700 px-2" name="x" type="text">
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <td class="px-6 py-4">
+                                Mangkir
+                            </td>
+                            <td class="px-6 py-4">
+                                30
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                <input class="w-20 bg-gray-700 px-2" name="x" type="text">
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <td class="px-6 py-4">
+                                Mangkir
+                            </td>
+                            <td class="px-6 py-4">
+                                30
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                <input class="w-20 bg-gray-700 px-2" name="x" type="text">
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                4
+                            </th>
+                            <td class="px-6 py-4">
+                                5R
+                            </td>
+                            <td colspan="2" class="px-6 py-4">
+                                Autdit Score
+                            </td>
+                            <td class="px-6 py-4">
+                                30
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                <input class="w-20 bg-gray-700 px-2" name="x" type="text">
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <td colspan="8" class="px-6 py-4 text-center">
+                                NILAI 100
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="my-4">
+            <h2 class="text-xl font-semibold">D. Pengurangan / Penambahan Nilai</h2>
+        </div>
+        <div>
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-100">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-center">
+                                No.
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Uraian
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Penambahan
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Pengurangan
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Nilai
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for(int index = 0; index < 6; index++)
+                        {
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    1
+                                </th>
+                                <td class="px-6 py-4">
+                                    Surat Peringatan
+                                </td>
+                                <td class="px-6 py-4">
+                                    <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                    </svg>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <svg class="w-3 h-3 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                    </svg>
+                                </td>
+                                <td class="px-6 py-4">
+                                    9
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="my-4">
+            <h2 class="text-xl font-semibold">E. Rekapitulasi Nilai</h2>
+        </div>
+        <div>
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-100">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-center">
+                                No.
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Unjuk Kerja
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Bobot %
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Nilai
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Nilai Unjuk Kerja
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (int index = 0; index < 4; index++)
+                        {
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    1
+                                </th>
+                                <td class="px-6 py-4">
+                                    Indikator Utama Kinerja
+                                </td>
+                                <td class="px-6 py-4">
+                                    70
+                                </td>
+                                <td class="px-6 py-4">
+                                    340
+                                </td>
+                                <td class="px-6 py-4">
+                                    100
+                                </td>
+                            </tr>
+                        }
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 dark:text-blue-900">
+                            <td colspan="4" class="px-6 py-4 text-center">
+                                TOTAL NILAI AKHIR TAHUN 1000
+                            </td>
+                            <td class="px-6 py-4">
+                                CUKUP
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="https://cdn.tailwindcss.com"></script>

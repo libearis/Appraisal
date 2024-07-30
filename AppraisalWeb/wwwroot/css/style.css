@@ -1,0 +1,330 @@
+body{
+    background-color: #227093;
+    /* margin: 0; */
+}
+
+.main-container{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: 85px 1fr;
+    grid-template-columns: 1fr 7fr; 
+    grid-template-areas: 
+    "nav header"
+    "nav main";
+
+    /* gap: 10px; */
+    /* margin: 10px 20px; */
+}
+input {
+    border: 0px solid #000;
+    margin: 0;
+    background: transparent;
+    width: 100%
+}
+
+table tr td {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+table {
+    background: #fff none repeat scroll 0 0;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+header{
+    border-bottom: 2px solid black;
+}
+
+nav{
+    box-sizing: border-box;
+    background-color: #00b894;
+}
+
+header{
+    grid-area: header;   
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.header-flex button{
+    font-size: 20px;
+    height: 40px;
+}
+
+.header-flex span{
+    margin-right: 40px;
+}
+
+nav{
+    grid-area: nav;
+}
+
+nav div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+}
+
+a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    height: 100%;
+}
+
+nav a:hover{
+    background-color: #10ac84;
+    transition: 0.5s;
+    opacity: 0.3;
+}
+
+.header-page div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.home-description{
+    font-size: 50px;
+}
+
+main{
+    grid-area: main;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.field-validation-error {
+    display: inline-block;
+    box-sizing: border-box;
+    color: white;
+    background-color: #c0392b;
+    vertical-align: middle;
+    line-height: 30px;
+    padding: 0 12px;
+    border-radius: 4px;
+    margin-left:5px;
+}
+
+.popup-validation-error {
+    color: red;
+    font-size: 12px;
+}
+
+input{
+    height: 30px;
+}
+
+select{
+    height: 40px;
+    width: 200px;
+}
+
+#search-button{
+    width: 130px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+table{
+    margin-top: 30px;
+    width: 100%;
+    height: 275px;
+    text-align: center;
+}
+
+#table-text{
+    width: 35%;
+    height: 150px;
+    text-align: start;
+}
+
+table th, tfoot td{
+    background-color: #10ac84;
+}
+
+table tr:nth-child(odd){
+    background-color: #c7ecee;
+}
+
+table tr:nth-child(even){
+    background-color: #dff9fb;
+}
+
+#table-text tr:nth-child(odd){
+    background-color: transparent;
+}
+
+#table-text tr:nth-child(even){
+    background-color: transparent;
+}
+
+.tfoot-flex{
+    font-size: 15px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+#firstbutton{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#pay{
+    margin-top: 50px;
+    width: 100%;
+    font-size: 25px;
+}
+
+.upsert{
+    width: 80%;
+    height: 80%;
+    margin-bottom: 30px;
+}
+
+form .upsert tr td{
+    background-color: #1dd1a1;
+    text-align: start;
+}
+
+.pop-up-detail, .pop-up-delete, .pop-up-detail2, .change-password{
+    visibility: hidden;
+    position: fixed;
+}
+
+.pop-up-detail-active, .pop-up-delete-active, .pop-up-detail2-active, .change-password-active{
+    visibility: visible;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up-detail-active .popup, .pop-up-delete .popup, .pop-up-detail2 .popup, .change-password .popup{
+    z-index: 1;
+    background-color: #81ecec;
+    margin-right: 100px;
+    margin-bottom: 100px;
+
+    width: 40%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pop-up-delete .popup, .pop-up-service .popup{
+    height: 20%;
+    width: 30%;
+}
+
+.delete-button{
+    display: flex;
+}
+
+#detail-bio, #detail-bio tr{
+    width: 90%;
+}
+
+#detail-bio table{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: start;
+}
+
+#detail-bio table td:last-child{
+    padding-left: 80px;
+}
+
+#detail-bio table tr:nth-child(odd), #detail-bio table tr:nth-child(even){
+    background-color: #81ecec;
+}
+
+.admin table{
+    width: 60%;
+    text-align: start;
+}
+
+.admin  table tr:nth-child(odd), .admin table tr:nth-child(even){
+    background-color: #1dd1a1;
+}
+
+#saveadmin{
+    margin-top: 30px;
+    width: 200px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.button-25 {
+    color: #f7f1e3;
+    background-color: #20bf6b;
+    border: 1px solid #2A8387;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.button-25 a{
+    color: white;
+}
+
+.button-25:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
+
+.button-25:active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+#tambah, #edit{
+    width: 100%;
+}
+
+#delete, #stopservice{
+    width: 150px;
+}
+
+#delete-text, #stop-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#gototopup{
+    text-decoration: underline;
+    color: blue;
+}
+
+.separator{
+    border: 1px solid black;
+}
+
+.link-text{
+    text-decoration: underline;
+    color: #0984e3;
+}
